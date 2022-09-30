@@ -2,26 +2,26 @@ countries = ['spain', 'france', 'slovakia', 'italy', 'slovenia', 'poland', 'aust
 favouriteCountry = 'slovakia'
 # in this exercise the idea is to apply all the methods used in this chapter.
 
-print(countries)
+print("Original list: \n", countries)
 countries[1] = 'andorra'
 countries.append('luxembourg')
 countries.insert(0, 'uk')
-print(countries)
+print("Andorra set at 1, append luzembourg, insert uk at 0", countries)
 del countries[0]
-print(countries)
+print("Deleted  country at 0", countries)
 lastCountryVisited = countries.pop()
-print(lastCountryVisited)
-print(countries)
+print("pop:", lastCountryVisited)
+print("list after pop:", countries)
 italy = countries.pop(3)
-print(italy)
+print("pop at 3:", italy)
 countries.remove(favouriteCountry)
-print(countries)
+print("remove favourite country which was slovakia:", countries)
 countries.sort()
-print(countries)
-print(sorted(countries, reverse=True))
-print(countries)
+print("sort the list:", countries)
+print("sorted list with reverse:", sorted(countries, reverse=True))
+print("sorted doesn't change the order, just at printing:", countries)
 countries.reverse()
-print(countries)
-print(str(len(countries)))
+print("reversing the reversed", countries)
+print("printing the length: ", str(len(countries)))
 
 
