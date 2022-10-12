@@ -1,5 +1,5 @@
 # here below some examples of dictionaries, how to create them and how to delete key-values
-
+#1
 alien_0 = {'color': 'green', 'points': 5}
 
 print(alien_0['color'])
