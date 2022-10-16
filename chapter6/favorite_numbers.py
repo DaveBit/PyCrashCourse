@@ -14,8 +14,6 @@ for names in favorite_numbers:
 num = favorite_numbers['Katus']
 print("Katus' favorite number is " + str(num) + ".")
 
-
-# favorite_numbers.keys is faster than favorite_numbers.
 time = datetime.now()
 if 'Kletus' not in favorite_numbers:
     print('hey hey')

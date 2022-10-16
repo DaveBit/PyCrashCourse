@@ -5,7 +5,6 @@ glossary = {'list': 'mutable array of objects',
             'comments': 'comments serve to explain the action you make'
             }
 
-# using \n and .title()
 word = 'list'
 print("\nWhat's a " + word.title() + "? " + glossary[word])
 

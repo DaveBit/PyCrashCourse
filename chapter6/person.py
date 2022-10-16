@@ -6,7 +6,6 @@ person = {'first_name':'Hernesto',
           'age': 34,
           'city': 'Palm City',
           }
-# printing key/values
 
 print(person['first_name'])
 print(person['last_name'])
