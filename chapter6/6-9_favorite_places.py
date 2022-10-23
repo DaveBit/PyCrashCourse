@@ -5,7 +5,10 @@ favorite_places = {
     }
 
 for name, places in favorite_places.items():
-    print("\n" + name.title() + "'s favourite languages are: ")
+    if len(places) == 1:
+        print("\n" + name.title() + "'s favourite language is: ")
+    else:
+        print("\n" + name.title() + "'s favourite languages are: ")
     for place in places:
         print("\t" + place)
 
