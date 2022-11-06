@@ -6,6 +6,3 @@ def make_pizza(size, *toppings):
         print("- " + topping)
     print(toppings)
 
-
-make_pizza(18, 'pineapple')
-make_pizza(15, 'mushrooms', 'green peppers', 'extra cheese')
