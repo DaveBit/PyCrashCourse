@@ -13,9 +13,6 @@ class Dog():
         """Simulate rolling over in response to a command."""
         print(self.name.title() + " rolled over!")
 
-<<<<<<< HEAD
-
 my_dog = Dog('willie', 6)
 print("My dog's name is " + my_dog.name.title())
-=======
->>>>>>> origin/master
+
