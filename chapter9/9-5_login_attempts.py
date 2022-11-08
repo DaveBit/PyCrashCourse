@@ -3,6 +3,7 @@ class User:
         self.user_profile = {
             'first_name': first_name,
             'last_name': last_name,
+            'login_attempts': 0,
         }
         for key, value in others.items():
             self.user_profile[key] = value
@@ -16,6 +17,12 @@ class User:
     def greet_user(self):
         print("Hello " + self.user_profile['first_name'])
 
+    def increment_login_attempts(self):
+        self.user_profile['login_attempts'] += 1
+
+    def reset_login_attempts(self):
+        self.user_profile['login_attempts'] = 0
+
 
 user1 = User('Dave', 'bit', location='valencia', username='matroska', email='davedestroyer')
 user1.describe_user()
@@ -24,8 +31,12 @@ user2.describe_user()
 user1.greet_user()
 user2.greet_user()
 
+for login in range(10):
+    user1.increment_login_attempts()
+    print("User1 login attempts at: " + str(user1.user_profile['login_attempts']))
 
-
-
+print("User1 login attempts resetting...")
+user1.reset_login_attempts()
+print("User1 login attempts: " + str(user1.user_profile['login_attempts']))
 
 
