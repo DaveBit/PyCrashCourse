@@ -37,7 +37,6 @@ class Admin(User):
         # Initialize an empty set of privileges.
         self.privileges = Privileges()
 
-<<<<<<< HEAD
     def describe_user(self):
         """Display a summary of the user's information."""
         print("\n" + self.first_name + " " + self.last_name)
@@ -46,8 +45,6 @@ class Admin(User):
         print("  Location: " + self.location)
         print("  User type: Admin")
 
-=======
->>>>>>> origin/master
 
 class Privileges:
     """A class to store an admin's privileges."""
@@ -70,17 +67,16 @@ class Privileges:
 
 admin1 = Admin('Dave', 'Bit', 'Davebit', 'davebitdestroyer', 'london')
 admin1.privileges.show_privileges()
-<<<<<<< HEAD
+
 #  admin1.privileges.privileges.append()
 admin1.privileges.add_privileges('add a user', 'delete a user', 'ban a user')
 admin1.privileges.show_privileges()
 admin1.describe_user()
-=======
+
 
 admin1.privileges.add_privileges('add a user', 'delete a user', 'ban a user')
 admin1.privileges.show_privileges()
 
->>>>>>> origin/master
 
 """
 Also:
