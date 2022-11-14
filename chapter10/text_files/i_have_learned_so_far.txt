@@ -1,0 +1,10 @@
+In Python you can use variables
+In Python you can use different data types
+In Python you can use lists
+In Python you can use if statements
+In Python you can use dictionaries
+In Python you can ask for user inputs
+In Python you can use while loops
+In Python you can use functions
+In Python you can use classes
+In Python you can handle files and exceptions 
