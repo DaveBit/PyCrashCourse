@@ -14,13 +14,15 @@ def count_words(filename):
         books_dictionary[book.replace('.txt', '')] = int(num_words)
 
 
-
+books_dictionary = {}
 file = "text_files/alice_in_wonderland.txt"
 filenames = ['alice_in_wonderland.txt', 'siddhartha.txt', 'moby_dick.txt', 'little_women.txt', 'olala.txt']
-books_dictionary = {}
+
 
 for book in filenames:
     count_words('text_files/'+book)
+
+#  Below 3 different ways of picking the highest value by sorting the dictionary or without sorting it out.
 
 books_dictionary_sorted = dict(sorted(books_dictionary.items(), key=lambda x: x[1], reverse=True))
 #  sorted iterates through the dictionary, we retrieve the items, and organized them by an anonimous expression which
