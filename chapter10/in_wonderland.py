@@ -33,5 +33,10 @@ print("The longest book is " + next(iter(books_dictionary_sorted)).replace('_', 
 max_value = max(books_dictionary.values())
 print(max_value)
 print("The longest book is " + str(max(books_dictionary, key=books_dictionary.get)))
+#  max looks for the highest value. First argument is the iterable.
+#  second argument is the key we are going to use to find the max value.
+#  we are using books_dictionary.get since it retrieves the value for each key.
+
 print(max(books_dictionary))
+print(books_dictionary)
 
