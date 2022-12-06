@@ -9,9 +9,10 @@ while True:
         if y == 'q':
             break
         number_two = int(y)
-        final_number = x + y
 
     except ValueError:
         print("Something went wrong\n Let's start again")
+
     else:
+        final_number = x + y
         print("The final number is: " + str(final_number))
