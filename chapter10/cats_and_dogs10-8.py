@@ -12,5 +12,3 @@ try:
     print(dog_content)
 except FileNotFoundError:
     print("Something went wrong")
-else:
-    pass
