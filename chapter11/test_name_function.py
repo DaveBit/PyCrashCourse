@@ -13,5 +13,3 @@ class NamesTestCase(unittest.TestCase):
         formatted_name = get_formatted_name('wolfgang', 'mozart', 'amadeus')
         self.assertEqual(formatted_name, 'Wolfgang Amadeus Mozart')
 
-
-unittest.main()
